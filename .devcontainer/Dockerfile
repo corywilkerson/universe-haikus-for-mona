@@ -5,7 +5,7 @@
 
 # For information on the contents of the container image below, see following Dockerfile:
 # https://github.com/microsoft/vscode-dev-containers/tree/v0.43.0/containers/javascript-node-12/.devcontainer/Dockerfile
-FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:0-12
+FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:16-bullseye
 
 # The image referenced above includes a non-root user with sudo access. Add 
 # the "remoteUser" property to devcontainer.json to use it. On Linux, the container 

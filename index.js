@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3000;
+const address = process.env.ADDRESS || 'localhost'
+const port = process.env.PORT || 3000
 const { Pool } = require('pg')
 app.locals.octicons = require("@primer/octicons");
 
@@ -29,5 +30,5 @@ app.post('/heart', (req, res) => {
   });
 });
 
-app.listen(port, '127.0.0.1');
-console.log(`Server running on http://127.0.0.1:${port}`)
+app.listen(port, address);
+console.log(`Server running on ${address}:${port}`)
