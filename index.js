@@ -9,7 +9,7 @@ const pool = new Pool({
   user: process.env.POSTGRES_USER,
   database: process.env.POSTGRES_DB,
   password: process.env.POSTGRES_PASSWORD,
-  host: process.env.HOST,
+  host: process.env.POSTGRES_HOST,
   port: 5432
 });
 
@@ -30,5 +30,5 @@ app.post('/heart', (req, res) => {
   });
 });
 
-app.listen(port, address);
+app.listen(port);
 console.log(`Server running on ${address}:${port}`)
